@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered web scraper and summarizer">
+    <title>AI Web Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="glass-container">
+        <header>
+            <h1>AI Web Summarizer</h1>
+            <p class="subtitle">Enter a URL to generate an instant AI-powered summary</p>
+        </header>
+
+        <div class="input-group">
+            <input 
+                type="url" 
+                id="urlInput" 
+                placeholder="https://example.com" 
+                autocomplete="off"
+                aria-label="Website URL"
+            >
+            <button id="summarizeBtn" type="button" aria-label="Generate summary">
+                <span id="btnText">Summarize</span>
+                <div class="loader" id="loader"></div>
+            </button>
+        </div>
+
+        <div class="output-area" id="outputArea">
+            <div class="placeholder-text">Your summary will appear here after processing</div>
+            <div id="resultContent"></div>
+        </div>
+    </main>
+
+    <!-- Load marked.js first -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Then load our script -->
+    <script src="script.js"></script>
+</body>
+</html>
