@@ -1,4 +1,4 @@
-# AI Web Summarizer 🚀
+# AI Web Summarizer 
 
 **AI-powered web scraper and summarizer**
 
@@ -6,14 +6,14 @@ A small Express.js service that scrapes article content from a public URL and us
 
 ---
 
-## 🔍 What this project does
+##  What this project does
 
 - Scrapes the main article content from a URL using Axios + Cheerio
 - Cleans and normalizes text (word counts, reading time)
 - Generates an AI summary and extracts key points via the Gemini API
 - Provides a lightweight REST API and a static frontend in `public/`
 
-## ✨ Key features
+##  Key features
 
 - Simple, Vercel-friendly scraping (no headless browser required)
 - Exponential backoff for Gemini API requests
@@ -22,7 +22,7 @@ A small Express.js service that scrapes article content from a public URL and us
 
 ---
 
-## 🚀 Quick start
+##  Quick start
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ The server will run at `http://localhost:3000` by default.
 
 ---
 
-## 🧭 API
+##  API
 
 ### Health check
 
@@ -114,7 +114,7 @@ Response (abridged):
 
 ---
 
-## 🛠 How it works (internals)
+##  How it works (internals)
 
 - `utils/scraper.js` — makes an HTTP GET request and extracts the largest text region from common content selectors (article, main, etc.).
 - `utils/textProcessor.js` — cleans text and computes metadata like reading time and word count.
@@ -123,13 +123,13 @@ Response (abridged):
 
 ---
 
-## ♻️ Deployment
+##  Deployment
 
 - Vercel-friendly configuration is present (`vercel.json`). For production, make sure `GEMINI_API_KEY` is set in your environment.
 
 ---
 
-## ⚠️ Responsible use & scraping etiquette
+##  Responsible use & scraping etiquette
 
 - Respect site `robots.txt` and a website's Terms of Service before scraping.
 - Avoid overloading sites—use rate limits and caching where appropriate.
@@ -137,7 +137,7 @@ Response (abridged):
 
 ---
 
-## ✅ Contributing
+##  Contributing
 
 If you'd like to contribute, please:
 
@@ -149,13 +149,13 @@ If you have a `CONTRIBUTING.md` file, follow its rules; otherwise follow the ste
 
 ---
 
-## 🧾 License
+##  License
 
 This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ---
 
-## 💬 Support
+##  Support
 
 - For issues and feature requests, open an issue on the repository.
 
